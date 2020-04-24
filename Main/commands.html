@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.rbxbolt.com/commands by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Apr 2020 12:19:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>RBXBolt - Commands</title>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="icon" href="favicon.ico"/>
+<meta name="keywords" content="RBXBolt,roblox bot,rbxbolt,verification bot">
+<meta name="description" content="RBXBolt a multi-purpose Discord bot that is easy to use with features like Web Dashboard, Roblox Features, Roblox Verification System, Music and much more!">
+<meta name="author" content="RBXBolt">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="alternate" href="index.html" hreflang="en-us" />
+<link rel="stylesheet" href="css/app.css">
+<link href="../maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<meta property="og:title" content="RBXBolt" />
+<meta property="og:url" content="index.html" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="RBXBolt a multi-purpose Discord bot that is easy to use with features like Web Dashboard, Roblox Verification System, Music, Moderation and much more!" />
+<meta property="og:image" content="RBXBolt.html" />
+<style>
+.responsive_1 { width: 320px; height: 100px; }
+@media(min-width: 500px) { .responsive_1 { width: 468px; height: 60px; } }
+@media(min-width: 800px) { .responsive_1 { width: 728px; height: 90px; } }
+</style>
+<script async src="../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark orange lighten-1">
+  <a class="navbar-brand" href="index.html">
+    <img src="favicon.ico" width="30" height="30" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555" aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light" href="premium.html">Premium</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light" href="servers.html">Public Servers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light" href="verify.html">Verification</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light" href="commands.html">Commands</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light" href="faq.html">FAQ</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li id="User_Dropdown" class="nav-item dropdown dropdown-animating" hidden="true">
+        <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+          <img id="User_Avatar" src="#" class="rounded-circle z-depth-0" alt="" height="35">
+        </a>
+
+        <div class="dropdown-menu dropdown-menu-right dropdown-default animated fadeIn fadeOut" aria-labelledby="navbarDropdownMenuLink">
+          <span id="User_Name" class="dropdown-item-text"></span>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item waves-effect waves-light" href="manage.html">Manage Servers</a>
+          <a class="dropdown-item waves-effect waves-light" href="index.html">Logout</a>
+        </div>
+      </li>
+
+      <a role="button" id="User_Login" class="btn btn-primary btn-sm" href="https://discordapp.com/api/oauth2/authorize?client_id=570171110742556673&amp;redirect_uri=https%3A%2F%2Fwww.rbxbolt.com%2Flogin&amp;response_type=code&amp;scope=identify%20guilds" hidden="true">Login</a>
+    </ul>
+  </div>
+</nav>
+
+
+  <div class="container-fluid">
+    <div class="mb-5"></div>
+<div align="center" style="display:block;">
+  <ins class="adsbygoogle responsive_1" style="display:inline-block;" data-ad-client="ca-pub-4204494213766731" data-ad-slot="3411404195"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
+
+    <div class="mb-3"></div>
+
+    <h5 class="title text-center">Commands</h5>
+    <p class="subtitle text-center">Full list of commands with usage, description and example.</p>
+
+    <div class="row justify-content-center">
+      <div class="col-md-7 order-md-1">
+        <div class="classic-tabs mx-2 mb-5">
+          <ul class="nav nav-tabs" id="Tabs" role="tablist">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Category</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" id="Account-commands-tab" data-toggle="tab" href="#Account-commands" role="tab" aria-controls="Account-commands" aria-selected="true">Account</a>
+                <a class="dropdown-item" id="Information-commands-tab" data-toggle="tab" href="#Information-commands" role="tab" aria-controls="Information-commands" aria-selected="true">Information</a>
+                <a class="dropdown-item" id="Fun-commands-tab" data-toggle="tab" href="#Fun-commands" role="tab" aria-controls="Fun-commands" aria-selected="true">Fun</a>
+                <a class="dropdown-item" id="Music-commands-tab" data-toggle="tab" href="#Music-commands" role="tab" aria-controls="Music-commands" aria-selected="true">Music</a>
+                <a class="dropdown-item" id="Support-commands-tab" data-toggle="tab" href="#Support-commands" role="tab" aria-controls="Support-commands" aria-selected="true">Support</a>
+                <a class="dropdown-item" id="Roblox-commands-tab" data-toggle="tab" href="#Roblox-commands" role="tab" aria-controls="Roblox-commands" aria-selected="true">Roblox</a>
+                <a class="dropdown-item" id="Binds-commands-tab" data-toggle="tab" href="#Binds-commands" role="tab" aria-controls="Binds-commands" aria-selected="true">Binds</a>
+                <a class="dropdown-item" id="Create-commands-tab" data-toggle="tab" href="#Create-commands" role="tab" aria-controls="Create-commands" aria-selected="true">Create</a>
+                <a class="dropdown-item" id="Administration-commands-tab" data-toggle="tab" href="#Administration-commands" role="tab" aria-controls="Administration-commands" aria-selected="true">Administration</a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="Account-commands" role="tabpanel" aria-labelledby="Account-commands-tab">
+              <div class="cards">
+                
+                <div class="card command">
+                  <div class="card-body">
+                    <h5 class="card-title">addaccount</h5>
+                    <p class="card-subtitle"></p>
+                    <p class="card-subtitle">Add a new account.</p>
+                  </div>
+                </div>
+                
+                <div class="card command">
+                  <div class="card-body">
+                    <h5 class="card-title">deleteaccount</h5>
+                    <p class="card-subtitle"></p>
+                    <p class="card-subtitle">Delete a added account.</p>
+                  </div>
+                </div>
+                
+                <div class="card command">
+                  <div class="card-body">
+                    <h5 class="card-title">discordid</h5>
+                    <p class="card-subtitle"></p>
+                    <p class="card-subtitle">Get your discord id.</p>
+                  </div>
+                </div>
+                
+                <div class="card command">
+                  <div class="card-body">
+                    <h5 class="card-title">getaccounts</h5>
+                    <p class="card-subtitle"></p>
+                    <p class="card-subtitle">Gets all of your the linked **ROBLOX** accounts.</p>
+                  </div>
+                </div>
+                
+                <div class="card command">
+                  <div class="card-body">
+                    <h5 class="card-title">getroles</h5>
+                    <p class="card-subtitle"></p>
+                    <p class="card-subtitle">Update your roles to your group rank.</p>
+                  </div>
+                </div>
+                
+                <div class="card command">
+                  <div class="card-body">
+                    <h5 class="card-title">switchuser</h5>
+                    <p class="card-subtitle"></p>
+                    <p class="card-subtitle">Switch your account.</p>
+                  </div>
+                </div>
+                
+                <div class="card command">
+                  <div class="card-body">
+                    <h5 class="card-title">verify</h5>
+                    <p class="card-subtitle"></p>
+                    <p class="card-subtitle">Verify/Link your account.</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="Information-commands" role="tabpanel" aria-labelledby="Information-commands-tab">
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">assetinfo</h5>
+                  <p class="card-subtitle">&lt;assetid&gt;</p>
+                  <p class="card-subtitle">Retrieve ROBLOX &lt;assetid&gt; information.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">channelinfo</h5>
+                  <p class="card-subtitle">&lt;channel&gt;</p>
+                  <p class="card-subtitle">Get the &lt;channel&gt; information.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">discordinfo</h5>
+                  <p class="card-subtitle">&lt;user&gt;</p>
+                  <p class="card-subtitle">Get the user discord information.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">gamepassinfo</h5>
+                  <p class="card-subtitle">&lt;assetid&gt;</p>
+                  <p class="card-subtitle">Retrieve ROBLOX &lt;assetid&gt; information.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">groupinfo</h5>
+                  <p class="card-subtitle">&lt;groupid&gt;</p>
+                  <p class="card-subtitle">Retrieve &lt;groupid&gt; information.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">news</h5>
+                  <p class="card-subtitle">&lt;country code&gt; &lt;query&gt;</p>
+                  <p class="card-subtitle">Get trending news related to the country and query if provided.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">ownasset</h5>
+                  <p class="card-subtitle">&lt;userid&gt; &lt;assetid&gt;</p>
+                  <p class="card-subtitle">Check if &lt;userid&gt; owns &lt;assetid&gt;.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">roleinfo</h5>
+                  <p class="card-subtitle">&lt;role&gt;</p>
+                  <p class="card-subtitle">Get the &lt;role&gt; information.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">serverinfo</h5>
+                  <p class="card-subtitle"></p>
+                  <p class="card-subtitle">Get information about this server/guild.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">userinfo</h5>
+                  <p class="card-subtitle">&lt;username&gt;</p>
+                  <p class="card-subtitle">Retrieve &lt;username&gt; ROBLOX information.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">ytchannelinfo</h5>
+                  <p class="card-subtitle">&lt;name&gt;</p>
+                  <p class="card-subtitle">Gets &lt;name&gt; youtube channel info.</p>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="tab-pane fade" id="Fun-commands" role="tabpanel" aria-labelledby="Fun-commands-tab">
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">8ball</h5>
+                  <p class="card-subtitle">&lt;question&gt;</p>
+                  <p class="card-subtitle">Ask the magic 8ball a question.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">choose</h5>
+                  <p class="card-subtitle">&lt;option 1&gt; &lt;option 2&gt;</p>
+                  <p class="card-subtitle">Chooses between options you provide.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">urban</h5>
+                  <p class="card-subtitle">&lt;word&gt;</p>
+                  <p class="card-subtitle">Get the word from the urban dictionary.</p>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="tab-pane fade" id="Music-commands" role="tabpanel" aria-labelledby="Music-commands-tab">
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">play</h5>
+                  <p class="card-subtitle">&lt;url&gt;</p>
+                  <p class="card-subtitle">Play a youtube video.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">skip</h5>
+                  <p class="card-subtitle"></p>
+                  <p class="card-subtitle">Skip a song</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">stop</h5>
+                  <p class="card-subtitle"></p>
+                  <p class="card-subtitle">Stop playing a music.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">volume</h5>
+                  <p class="card-subtitle">&lt;amount&gt;</p>
+                  <p class="card-subtitle">Adjust the music volume.</p>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="tab-pane fade" id="Support-commands" role="tabpanel" aria-labelledby="Support-commands-tab">
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">close</h5>
+                  <p class="card-subtitle"></p>
+                  <p class="card-subtitle">Close a support ticket.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">rename</h5>
+                  <p class="card-subtitle">&lt;name&gt;</p>
+                  <p class="card-subtitle">Name the current support ticket channel.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">ticket</h5>
+                  <p class="card-subtitle">&lt;reason&gt;</p>
+                  <p class="card-subtitle">Open a new support ticket.</p>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="tab-pane fade" id="Roblox-commands" role="tabpanel" aria-labelledby="Roblox-commands-tab">
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">acceptjoin</h5>
+                  <p class="card-subtitle">&lt;username&gt;</p>
+                  <p class="card-subtitle">Accept a user join request.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">botinfo</h5>
+                  <p class="card-subtitle"></p>
+                  <p class="card-subtitle">Get the bot info.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">declinejoin</h5>
+                  <p class="card-subtitle">&lt;username&gt;</p>
+                  <p class="card-subtitle">Decline a user join request.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">demote</h5>
+                  <p class="card-subtitle">&lt;username&gt;</p>
+                  <p class="card-subtitle">Demote the user to the previous rank.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">exile</h5>
+                  <p class="card-subtitle">&lt;username&gt; &lt;value&gt;</p>
+                  <p class="card-subtitle">Exile &lt;username&gt; and delete all of their post if &lt;value&gt; is true.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">follow</h5>
+                  <p class="card-subtitle">&lt;username&gt;</p>
+                  <p class="card-subtitle">Follow a user.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">groupsummary</h5>
+                  <p class="card-subtitle"></p>
+                  <p class="card-subtitle">Get your group summary statistics. Pending Robux, Sales of Goods and etc.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">joinrequests</h5>
+                  <p class="card-subtitle"></p>
+                  <p class="card-subtitle">Get join requests from the group.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">post</h5>
+                  <p class="card-subtitle">&lt;message&gt;</p>
+                  <p class="card-subtitle">Post &lt;message&gt; on your group wall.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">promote</h5>
+                  <p class="card-subtitle">&lt;username&gt;</p>
+                  <p class="card-subtitle">Promote the user to the next rank.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">rank</h5>
+                  <p class="card-subtitle">&lt;username&gt; &lt;rolesetid&gt;</p>
+                  <p class="card-subtitle">Rank a user.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">shout</h5>
+                  <p class="card-subtitle">&lt;message&gt;</p>
+                  <p class="card-subtitle">Post &lt;message&gt; on your group shout.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">unfollow</h5>
+                  <p class="card-subtitle">&lt;username&gt;</p>
+                  <p class="card-subtitle">Unfollow a user.</p>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="tab-pane fade" id="Binds-commands" role="tabpanel" aria-labelledby="Binds-commands-tab">
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">bind</h5>
+                  <p class="card-subtitle">&lt;GroupId:Rank | GroupId:Rank-Rank | GamePass:AssetId | Badge:AssetId | Asset:AssetId&gt; &lt;role&gt;</p>
+                  <p class="card-subtitle">Binds &lt;role&gt; in this server to the value</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">deletebind</h5>
+                  <p class="card-subtitle">&lt;role&gt;</p>
+                  <p class="card-subtitle">Delete binding for &lt;role&gt;.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">massbinds</h5>
+                  <p class="card-subtitle">&lt;groupid&gt;</p>
+                  <p class="card-subtitle">Binds all group roles in &lt;groupid&gt; to match the role in this server</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">viewbinds</h5>
+                  <p class="card-subtitle">&lt;role&gt;</p>
+                  <p class="card-subtitle">View &lt;role&gt; group binds.</p>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="tab-pane fade" id="Create-commands" role="tabpanel" aria-labelledby="Create-commands-tab">
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">createchannel</h5>
+                  <p class="card-subtitle">&lt;name&gt; &lt;topic/description&gt;</p>
+                  <p class="card-subtitle">Create a channel named &lt;name&gt; and description &lt;topic/description&gt; for this server/guild.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">createemoji</h5>
+                  <p class="card-subtitle">&lt;url&gt; &lt;name&gt;</p>
+                  <p class="card-subtitle">Creates a new emoji on your Discord server.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">createinvite</h5>
+                  <p class="card-subtitle">&lt;channel&gt;</p>
+                  <p class="card-subtitle">Create a permanent invite link.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">verifychannel</h5>
+                  <p class="card-subtitle"></p>
+                  <p class="card-subtitle">Create a verify and verify-instructions channel in a category for this server/guild.</p>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="tab-pane fade" id="Administration-commands" role="tabpanel" aria-labelledby="Administration-commands-tab">
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">announce</h5>
+                  <p class="card-subtitle">&lt;channel&gt; &lt;message&gt;</p>
+                  <p class="card-subtitle">Announce a important message.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">customizebot</h5>
+                  <p class="card-subtitle">&lt;image url&gt; &lt;nickname&gt;</p>
+                  <p class="card-subtitle">Customize the bot avatar and nickname. Will only show in messages. Set it to none if you want to disable it.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">dynamicroles</h5>
+                  <p class="card-subtitle"></p>
+                  <p class="card-subtitle">Creates those group roles that is missing.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">embed</h5>
+                  <p class="card-subtitle">&lt;channel&gt; &lt;message&gt;</p>
+                  <p class="card-subtitle">Announce a message without tagging.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">invitestats</h5>
+                  <p class="card-subtitle"></p>
+                  <p class="card-subtitle">Get a list of invite that&#39;s created by user.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">message</h5>
+                  <p class="card-subtitle">&lt;user&gt; &lt;message&gt;</p>
+                  <p class="card-subtitle">Send a message to &lt;user&gt;.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">poll</h5>
+                  <p class="card-subtitle">&lt;channel&gt; &lt;message&gt;</p>
+                  <p class="card-subtitle">Make a poll in &lt;channel&gt;.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">resetsettings</h5>
+                  <p class="card-subtitle"></p>
+                  <p class="card-subtitle">Reset this server settings</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">role</h5>
+                  <p class="card-subtitle">&lt;user&gt; &lt;role&gt;</p>
+                  <p class="card-subtitle">Add/remove user from role.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">settings</h5>
+                  <p class="card-subtitle"></p>
+                  <p class="card-subtitle">View or edit this server settings. Like GroupId, PersistRoles, AgeLimit, GroupLock, Roles and much more.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">setup</h5>
+                  <p class="card-subtitle"></p>
+                  <p class="card-subtitle">Setup some settings for this server/guild.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">updateroles</h5>
+                  <p class="card-subtitle">&lt;user&gt;</p>
+                  <p class="card-subtitle">Update the specific user roles.</p>
+                </div>
+              </div>
+              
+              <div class="card command">
+                <div class="card-body">
+                  <h5 class="card-title">verifyall</h5>
+                  <p class="card-subtitle"></p>
+                  <p class="card-subtitle">Update roles and nicknames for each member in this server/guild.</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="mb-5"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="toast text-center cookiealert" role="alert" style="padding-bottom: 0rem;right: 10px;bottom: 10px;">
+    <p>This website uses cookies to ensure you get the best experience on our website.</p>
+    <button type="button" class="btn btn-primary btn-sm acceptcookies mb-3" aria-label="Close">Accept</button>
+</div>
+
+<footer class="page-footer font-small blue pt-4">
+  <div class="container-fluid text-center text-md-left">
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+        <h5 class="text-uppercase">RBXBolt</h5>
+        <p>RBXBolt is a Discord bot that has multiple features like Web Dashboard, Utility, Miscellaneous, Music System, Fun, Information and Roblox verification that will allow your members to verify their Roblox account on your Discord server.</p>
+      </div>
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <div class="col-md-3 mb-md-0 mb-3">
+        <h5 class="text-uppercase">Links</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="index.html" class="footer-link">Home</a>
+          </li>
+          <li>
+            <a class="footer-link" target="_blank" href="https://discordapp.com/api/oauth2/authorize?client_id=570171110742556673&amp;permissions=2083990609&amp;scope=bot">Invite Bot</a>
+          </li>
+          <li>
+            <a class="footer-link" target="_blank" href="https://discord.gg/yJhnCAh">Support Server</a>
+          </li>
+          <li>
+            <a href="premium.html" class="footer-link">Get Premium</a>
+          </li>
+          <li>
+            <a href="servers.html" class="footer-link">Public Servers</a>
+          </li>
+          <li>
+            <a href="faq.html" class="footer-link">FAQ</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-md-0 mb-3">
+        <h5 class="text-uppercase">Social Media</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a target="_blank" href="https://twitter.com/rbxbolt" class="footer-link"><i class="fa fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="index.html"> RBXBolt.com</a>.
+  </div>
+</footer>
+
+  <script async src="../code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script async src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script async src="js/app.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-96996474-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-96996474-4');
+</script>
+
+</body>
+
+<!-- Mirrored from www.rbxbolt.com/commands by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Apr 2020 12:19:01 GMT -->
+</html>
